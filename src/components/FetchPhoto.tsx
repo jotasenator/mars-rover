@@ -1,13 +1,17 @@
 import { useState, useEffect } from "react";
 import { roverData } from "../data/roverData";
+import { getRandomNumberOfIndexes } from "../helpers/randomNumber";
 import { RoverData } from "../interfaces/interfaces";
 
 export const FetchPhoto = () => {
   const [photos, setPhotos] = useState<RoverData[]>([]);
 
+  // setting max number of pictures of 6,
+  const newData: RoverData[] = getRandomNumberOfIndexes(roverData, 6);
+
   useEffect(() => {
-    console.log(roverData.length);
-    setPhotos(roverData.slice(0, 6));
+    console.log(newData);
+    setPhotos(newData);
   }, []);
 
   return (
