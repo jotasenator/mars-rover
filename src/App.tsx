@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Speech />
-      <Title title="Photos from planet Mars" />
+      <Title title="...hope they enjoy the stay :) " />
       <RenderPhoto />
     </div>
   );
