@@ -6,16 +6,17 @@ export const FetchPhoto = () => {
   const { photos } = UseFetchHook(roverData, 6);
 
   return (
-    <>
+    <div className="photos">
       {photos.map((photo) => (
-        <div className="photos" key={photo.id}>
+        <div className="photo-container" key={photo.id}>
           <img
             src={photo.img_src}
-            alt={`This picture is number ${photo.id} from ${photo.rover.name}`}
+            alt={`This would be picture number ${photo.id} from ${photo.rover.name}`}
             title={`This picture is number ${photo.id} from ${photo.rover.name}`}
+            loading={"lazy"}
           />
         </div>
       ))}
-    </>
+    </div>
   );
 };
