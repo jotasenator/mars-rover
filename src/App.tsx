@@ -1,10 +1,10 @@
 import "./App.css";
-import { FetchPhoto } from "./components/FetchPhoto";
+import { RenderPhoto } from "./components/RenderPhoto";
 
 function App() {
   return (
     <div className="App">
-      <FetchPhoto />
+      <RenderPhoto />
     </div>
   );
 }
