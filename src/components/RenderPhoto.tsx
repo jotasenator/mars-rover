@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { roverData } from "../data/roverData";
 import { UseFetchHook } from "../hooks/UseFetchHook";
+import { RenderImage } from "./RenderImage";
 
 export const RenderPhoto: FC = () => {
   //6 random Pictures
@@ -10,11 +11,10 @@ export const RenderPhoto: FC = () => {
     <div className="photos">
       {photos.map((photo) => (
         <div className="photo-container" key={photo.id}>
-          <img
+          <RenderImage
             src={photo.img_src}
             alt={`This would be picture number ${photo.id} from ${photo.rover.name}`}
             title={`This picture is number ${photo.id} from ${photo.rover.name}`}
-            loading={"lazy"}
           />
         </div>
       ))}
