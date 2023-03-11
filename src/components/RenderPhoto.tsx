@@ -1,7 +1,8 @@
+import { FC } from "react";
 import { roverData } from "../data/roverData";
 import { UseFetchHook } from "../hooks/UseFetchHook";
 
-export const RenderPhoto = () => {
+export const RenderPhoto: FC = () => {
   //6 random Pictures
   const { photos } = UseFetchHook(roverData, 6);
 
