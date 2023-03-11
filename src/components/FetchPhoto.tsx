@@ -8,12 +8,11 @@ export const FetchPhoto = () => {
   return (
     <>
       {photos.map((photo) => (
-        <div key={photo.id}>
-          <div>{`This picture is number ${photo.id} from ${photo.rover.name}`}</div>
+        <div className="photos" key={photo.id}>
           <img
             src={photo.img_src}
-            alt={`This picture is number ${photo.id}from ${photo.rover.name}`}
-            width="25%"
+            alt={`This picture is number ${photo.id} from ${photo.rover.name}`}
+            title={`This picture is number ${photo.id} from ${photo.rover.name}`}
           />
         </div>
       ))}
