@@ -6,11 +6,12 @@ export const Speech = () => {
     <div className="speech">
       <div>
         <p>
-          Any given day in March 2023 in Cuba we have the opportunity to pay
-          tribute to two companies. One that is in charge of the internet and
-          communications, called Empresa de Telecomunicaciones de Cuba S.A.
-          (ETECSA), and the other is in charge of the electricity service,
-          called Unión Eléctrica de Cuba (UNE).
+          Any given day in <time>March 2023</time> in Cuba we have the
+          opportunity to pay tribute to two companies. One that is in charge of
+          the internet and communications, called{" "}
+          <em>Empresa de Telecomunicaciones de Cuba S.A. (ETECSA)</em>, and the
+          other is in charge of the electricity service, called{" "}
+          <em>Unión Eléctrica de Cuba (UNE)</em>.
         </p>
 
         <p>
