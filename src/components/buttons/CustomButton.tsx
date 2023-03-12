@@ -1,4 +1,4 @@
-import { DetailedHTMLProps, FC, HTMLAttributes, useState } from "react";
+import { FC } from "react";
 import { useTranslation } from "react-i18next";
 
 interface Props {
@@ -13,11 +13,9 @@ export const CustomButton: FC<Props> = ({
   customClass,
 }) => {
   const { i18n } = useTranslation("global");
-  const [lang, setLang] = useState<Props["iso639_1"]>(iso639_1);
 
   const handleAction = () => {
-    setLang(iso639_1);
-    i18n.changeLanguage(lang);
+    i18n.changeLanguage(iso639_1);
   };
 
   return (
