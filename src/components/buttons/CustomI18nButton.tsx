@@ -7,7 +7,7 @@ interface Props {
   flagIcon: any;
 }
 
-export const CustomButton: FC<Props> = ({
+export const CustomI18nButton: FC<Props> = ({
   flagIcon,
   iso639_1,
   customClass,

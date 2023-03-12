@@ -1,6 +1,6 @@
 import { jest } from "@jest/globals";
 import { render, screen, fireEvent } from "@testing-library/react";
-import { CustomButton } from "../components/buttons/CustomButton";
+import { CustomI18nButton } from "../components/buttons/CustomI18nButton";
 
 describe("CustomButton component", () => {
   // Mock the useTranslation hook and the i18n.changeLanguage function
@@ -18,7 +18,7 @@ describe("CustomButton component", () => {
 
   test("should render the component with initial lang of en", () => {
     render(
-      <CustomButton
+      <CustomI18nButton
         flagIcon={mockFlagIcon}
         iso639_1="en"
         customClass="custom-button"
