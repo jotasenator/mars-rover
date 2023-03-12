@@ -5,6 +5,7 @@ import { Title } from "./components/Title";
 
 import { useTranslation } from "react-i18next";
 import { CustomI18nButton } from "./components/buttons/CustomI18nButton";
+import { RefreshButton } from "./components/buttons/RefreshButton";
 
 function App() {
   const { t } = useTranslation("global");
@@ -30,6 +31,7 @@ function App() {
       />
       <div>
         <Speech />
+        <RefreshButton buttonText="Refresh" />
       </div>
       <Title title={t("title.p8")} />
       <RenderPhoto />

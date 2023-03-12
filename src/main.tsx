@@ -7,6 +7,8 @@ import i18next from "i18next";
 import global_es from "./translations/es/global.json";
 import global_en from "./translations/en/global.json";
 import global_pt from "./translations/pt/global.json";
+import { store } from "./redux/store/store";
+import { Provider } from "react-redux";
 
 i18next.init({
   interpolation: { escapeValue: false },
@@ -28,7 +30,9 @@ i18next.init({
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <I18nextProvider i18n={i18next}>
-      <App />
+      <Provider store={store}>
+        <App />
+      </Provider>
     </I18nextProvider>
   </React.StrictMode>
 );
