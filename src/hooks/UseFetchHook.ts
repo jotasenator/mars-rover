@@ -12,7 +12,7 @@ export const UseFetchHook = (data: RoverData[], totalNumberOfPhotos: number) => 
     const newData: RoverData[] = getRandomNumberOfIndexes(data, totalNumberOfPhotos);
 
     useEffect(() => {
-        setPhotos(newData);
+        (value > 0) && setPhotos(newData);
     }, [value]);
 
     return { photos }
