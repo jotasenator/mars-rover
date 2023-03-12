@@ -1,0 +1,22 @@
+{
+    "speech": {
+        "p1": "Qualquer dia de",
+        "p2": "março de 2023",
+        "p3": "em Cuba apresenta a oportunidade de homenagear duas empresas. Uma que se encarrega da internet e das comunicações, chamada ",
+        "p4": "Empresa de Telecomunicaciones de Cuba S.A. (ETECSA)",
+        "p5": "e o outro é responsável pelo serviço de eletricidade, chamado ",
+        "p6": "Unión Eléctrica de Cuba (UNE)",
+        "p7": "Por isso, querem convidar os seus dirigentes, e em geral todos os que se sintam satisfeitos com o serviço prestado, a viajar para um local extraordinário"        
+    },
+    "title": {
+        "p8": "...espero que gostem da estadia :)  "
+    },
+    "imgAlt": {
+        "p9": "Esta seria a foto número ",
+        "p10": " do " 
+    },
+    "imgTitle": {
+        "p11": "Essa foto é o número ",
+        "p12": " do "
+    }
+}

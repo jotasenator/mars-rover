@@ -1,24 +1,22 @@
+import { FC } from "react";
 import myInternetSpeed from "../assets/myInternetSpeed.png";
 import { RenderImage } from "./RenderImage";
 
-export const Speech = () => {
+import { useTranslation } from "react-i18next";
+
+export const Speech: FC = () => {
+  const { t } = useTranslation("global");
+
   return (
     <div className="speech">
       <div>
         <p>
-          Any given day in <time>March 2023</time> in Cuba we have the
-          opportunity to pay tribute to two companies. One that is in charge of
-          the internet and communications, called{" "}
-          <em>Empresa de Telecomunicaciones de Cuba S.A. (ETECSA)</em>, and the
-          other is in charge of the electricity service, called{" "}
-          <em>Unión Eléctrica de Cuba (UNE)</em>.
+          {t("speech.p1")} <time>{t("speech.p2")}</time> {t("speech.p3")}
+          <em>{t("speech.p4")}</em>, {t("speech.p5")}
+          <em>{t("speech.p6")}</em>.
         </p>
 
-        <p>
-          For this reason, we want to invite their managers, and anyone in
-          general who feels happy with the service provided, to travel to an
-          extraordinary place:
-        </p>
+        <p>{t("speech.p7")}:</p>
       </div>
       <div>
         <RenderImage
