@@ -18,5 +18,10 @@
     "imgTitle": {
         "p11": "This picture is number ",
         "p12": " from "
+    
+    },
+    "refreshButton": {
+        "p13": "Search photos",
+        "p14": "Reload photos"
     }
 }

@@ -18,5 +18,9 @@
     "imgTitle": {
         "p11": "Essa foto é o número ",
         "p12": " do "
+    },
+    "refreshButton": {
+        "p13": "Pesquisar fotos",
+        "p14": "Recarregar fotos"
     }
 }

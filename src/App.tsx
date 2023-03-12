@@ -6,6 +6,7 @@ import { Title } from "./components/Title";
 import { useTranslation } from "react-i18next";
 import { CustomI18nButton } from "./components/buttons/CustomI18nButton";
 import { RefreshButton } from "./components/buttons/RefreshButton";
+import { Footer } from "./components/Footer";
 
 function App() {
   const { t } = useTranslation("global");
@@ -29,12 +30,16 @@ function App() {
         iso639_1={"es"}
         customClass={"flag"}
       />
-      <div>
-        <Speech />
-        <RefreshButton buttonText="Refresh" />
+      <Speech />
+      <div className="title-refresh-button">
+        <Title title={t("title.p8")} />
+        <RefreshButton
+          showMsg={t("refreshButton.p13")}
+          reloadMsg={t("refreshButton.p14")}
+        />
       </div>
-      <Title title={t("title.p8")} />
       <RenderPhoto />
+      <Footer />
     </div>
   );
 }

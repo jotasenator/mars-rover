@@ -12,10 +12,18 @@
   overflow: hidden;
   width: 100%;
 }
+.photo-container:last-child {
+  padding-bottom: 50px;
+}
 .photo-container img {
   height: 100%;
   object-fit: cover;
   width: 100%;
+  transition: 0.3s ease-in-out;
+}
+.photo-container img:hover {
+  scale: 1.04;
+  transition: 0.3s ease-in-out;
 }
 .title {
   font-family: Arial, Helvetica, sans-serif;
@@ -29,6 +37,7 @@
 }
 #internet-speed:hover {
   box-shadow: 1 2 1 3 gray;
+  cursor: pointer;
   rotate: 0deg;
   transition: 0.5s ease-in;
 }
@@ -54,9 +63,73 @@
   margin: 10px;
   scale: 3;
 }
+.title-refresh-button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* refresh button */
+
+.wrapper {
+  position: relative;
+}
+
+a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  transition: all 0.35s;
+}
+
+a span {
+  position: relative;
+  z-index: 2;
+}
+
+a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #d52b1e;
+  transition: all 0.35s;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a:hover:after {
+  width: 100%;
+}
+
+/* refresh button */
+
+.footer {
+  background-color: #006600;
+  color: #fff;
+  padding: 0 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  #internet-speed {
+  #internet-speed,
+  .title {
     display: none;
   }
   .speech p {
