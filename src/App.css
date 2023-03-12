@@ -3,46 +3,55 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 1rem;
+  justify-content: center;
   margin: 2%;
 }
 .photo-container {
-  width: 100%;
   height: 300px;
   overflow: hidden;
+  width: 100%;
 }
 .photo-container img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
+  width: 100%;
 }
 .title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
 }
 #internet-speed {
+  border-radius: 50%;
   max-width: 300px;
   transition: 0.5s;
-  border-radius: 50%;
 }
 #internet-speed:hover {
+  box-shadow: 1 2 1 3 gray;
   rotate: 360deg;
   transition: 0.5s ease-in;
-  box-shadow: 1 2 1 3 gray;
 }
 
 .speech {
-  margin-bottom: 20px;
-  display: flex;
   align-items: center;
+  display: flex;
   gap: 5px;
+  margin-bottom: 20px;
 }
 .speech p {
-  text-align: justify;
   font-size: 1.5vw;
   letter-spacing: 0.1px;
   line-height: 150%;
+  text-align: justify;
+  text-rendering: optimizeLegibility;
+}
+.flag {
+  background: transparent;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  scale: 3;
 }
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
