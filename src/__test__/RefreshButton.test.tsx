@@ -14,11 +14,14 @@ describe("RefreshButton", () => {
 
   beforeEach(() => {
     dispatchMock = jest.fn();
+    const mockDispatch = useDispatch as jest.MockedFunction<typeof useDispatch>;
 
-    useDispatch.mockReturnValue(dispatchMock);
+    const mockSelector = useSelector as jest.MockedFunction<typeof useSelector>;
+
+    mockDispatch.mockReturnValue(dispatchMock);
 
     useSelectorMock = jest.fn();
-    useSelector.mockReturnValue({ value: 0 });
+    mockSelector.mockReturnValue({ value: 0 });
   });
 
   afterEach(() => {

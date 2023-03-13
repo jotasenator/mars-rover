@@ -1,32 +1,62 @@
-// import the library and the hook
 import { renderHook } from "@testing-library/react-hooks";
+import { useSelector } from "react-redux";
 import { roverData } from "../data/roverData";
 import { UseFetchHook } from "../hooks/UseFetchHook";
-import { getRandomNumberOfIndexes } from "../helpers/randomNumber";
+import { increaseReducer } from "../redux/reducer/increaseReducer";
+import { types } from "../redux/types/types";
 
-//const mockGetRandomNumberOfIndexes = jest.fn();
-
-// mock the module that exports the helper function
-jest.mock("../helpers/randomNumber", () => ({
-  getRandomNumberOfIndexes: jest.fn(),
+jest.mock("react-redux", () => ({
+  useSelector: jest.fn(),
 }));
 
-// write a test case
 describe("UseFetchHook", () => {
-  it("should return a random subset of the data", () => {
-    // mock the return value of the helper function
-    (getRandomNumberOfIndexes as jest.Mock).mockReturnValue([
-      roverData[0],
-      roverData[2],
-    ]);
+  const mockSelector = useSelector as jest.MockedFunction<typeof useSelector>;
 
-    // render the hook with the mock data and a number
-    const { result } = renderHook(() => UseFetchHook(roverData, 2));
+  test("should return an empty array if value is 0", () => {
+    const totalNumberOfPhotos = 5;
+    const value = 0;
+    mockSelector.mockReturnValue({ value });
 
-    //console.log("renderHook data", result.current.photos);
-    //console.log("roverDataObject", [roverData[0], roverData[2]]);
+    const { result } = renderHook(() =>
+      UseFetchHook(roverData, totalNumberOfPhotos)
+    );
 
-    // assert that the hook returns the expected value
-    expect(result.current.photos).toEqual([roverData[0], roverData[2]]);
+    expect(result.current.photos).toEqual([]);
+  });
+
+  test("should return a random selection of RoverData if value is greater than 0", () => {
+    const totalNumberOfPhotos = 5;
+    const value = 1;
+    mockSelector.mockReturnValue({ value });
+
+    const { result } = renderHook(() =>
+      UseFetchHook(roverData, totalNumberOfPhotos)
+    );
+
+    expect(result.current.photos.length).toBeLessThanOrEqual(
+      totalNumberOfPhotos
+    );
+  });
+
+  test("should increase the value when receiving the INCREASE action", () => {
+    const action = { type: types.increase };
+    const initialState = { value: 0 };
+    const expectedState = { value: 1 };
+
+    expect(increaseReducer(initialState, action)).toEqual(expectedState);
+  });
+
+  test("should call useSelector with the correct arguments", () => {
+    const totalNumberOfPhotos = 5;
+    const value = 1;
+    const mockState = { increaseReducer: { value } };
+    mockSelector.mockReturnValue(mockState.increaseReducer);
+
+    renderHook(() => UseFetchHook(roverData, totalNumberOfPhotos));
+
+    expect(mockSelector).toHaveBeenCalledWith(expect.any(Function));
+    expect(mockSelector.mock.calls[0][0](mockState)).toEqual(
+      mockState.increaseReducer
+    );
   });
 });
