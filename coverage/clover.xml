@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1678673717844" clover="3.2.0">
+  <project timestamp="1678673717844" name="All files">
+    <metrics statements="63" coveredstatements="53" conditionals="11" coveredconditionals="8" methods="30" coveredmethods="23" elements="104" coveredelements="84" complexity="0" loc="63" ncloc="63" packages="9" files="16" classes="16"/>
+    <package name="src">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="App.tsx" path="/media/jotas/Trabajo/Challenges/challenge DevSkill/mars-rover-app/src/App.tsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="12" count="0" type="stmt"/>
+      </file>
+      <file name="main.tsx" path="/media/jotas/Trabajo/Challenges/challenge DevSkill/mars-rover-app/src/main.tsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="13" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components">
+      <metrics statements="13" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="8"/>
+      <file name="Footer.tsx" path="/media/jotas/Trabajo/Challenges/challenge DevSkill/mars-rover-app/src/components/Footer.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+      <file name="RenderImage.tsx" path="/media/jotas/Trabajo/Challenges/challenge DevSkill/mars-rover-app/src/components/RenderImage.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="10" count="2" type="stmt"/>
+      </file>
+      <file name="RenderPhoto.tsx" path="/media/jotas/Trabajo/Challenges/challenge DevSkill/mars-rover-app/src/components/RenderPhoto.tsx">
+        <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+      </file>
+      <file name="Speech.tsx" path="/media/jotas/Trabajo/Challenges/challenge DevSkill/mars-rover-app/src/components/Speech.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="Title.tsx" path="/media/jotas/Trabajo/Challenges/challenge DevSkill/mars-rover-app/src/components/Title.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.buttons">
+      <metrics statements="12" coveredstatements="11" conditionals="2" coveredconditionals="1" methods="7" coveredmethods="5"/>
+      <file name="CustomI18nButton.tsx" path="/media/jotas/Trabajo/Challenges/challenge DevSkill/mars-rover-app/src/components/buttons/CustomI18nButton.tsx">
+        <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+      </file>
+      <file name="RefreshButton.tsx" path="/media/jotas/Trabajo/Challenges/challenge DevSkill/mars-rover-app/src/components/buttons/RefreshButton.tsx">
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="3"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.data">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="roverData.ts" path="/media/jotas/Trabajo/Challenges/challenge DevSkill/mars-rover-app/src/data/roverData.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="32" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.helpers">
+      <metrics statements="10" coveredstatements="10" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
+      <file name="randomNumber.ts" path="/media/jotas/Trabajo/Challenges/challenge DevSkill/mars-rover-app/src/helpers/randomNumber.ts">
+        <metrics statements="10" coveredstatements="10" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="6248" type="stmt"/>
+        <line num="11" count="6248" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="876" type="stmt"/>
+        <line num="13" count="876" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.hooks">
+      <metrics statements="10" coveredstatements="6" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="2"/>
+      <file name="UseFetchHook.ts" path="/media/jotas/Trabajo/Challenges/challenge DevSkill/mars-rover-app/src/hooks/UseFetchHook.ts">
+        <metrics statements="10" coveredstatements="6" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="18" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.redux.reducer">
+      <metrics statements="9" coveredstatements="9" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
+      <file name="increaseReducer.ts" path="/media/jotas/Trabajo/Challenges/challenge DevSkill/mars-rover-app/src/redux/reducer/increaseReducer.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="8" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="17" count="7" type="stmt"/>
+      </file>
+      <file name="rootReducer.ts" path="/media/jotas/Trabajo/Challenges/challenge DevSkill/mars-rover-app/src/redux/reducer/rootReducer.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.redux.store">
+      <metrics statements="5" coveredstatements="5" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="store.ts" path="/media/jotas/Trabajo/Challenges/challenge DevSkill/mars-rover-app/src/redux/store/store.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="3" falsecount="0"/>
+        <line num="13" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.redux.types">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="types.ts" path="/media/jotas/Trabajo/Challenges/challenge DevSkill/mars-rover-app/src/redux/types/types.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="12" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
