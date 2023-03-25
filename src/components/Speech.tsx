@@ -9,14 +9,14 @@ export const Speech: FC = () => {
 
   return (
     <div className="speech">
-      <div>
-        <p>
+      <div className="speech-text">
+        <p className="p-one">
           {t("speech.p1")} <time>{t("speech.p2")}</time> {t("speech.p3")}
           <em>{t("speech.p4")}</em>, {t("speech.p5")}
           <em>{t("speech.p6")}</em>.
         </p>
 
-        <p>{t("speech.p7")}:</p>
+        <p className="p-two">{t("speech.p7")}:</p>
       </div>
       <div>
         <RenderImage
