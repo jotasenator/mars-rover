@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { types } from "../../redux/types/types";
+import { increase } from "../../actions/actions";
 
 interface Props {
   showMsg: string;
@@ -16,7 +16,7 @@ export const RefreshButton: FC<Props> = ({ showMsg, reloadMsg }) => {
       <a
         href="#"
         onClick={(e) => {
-          dispatch({ type: types.increase });
+          dispatch(increase());
           e.preventDefault();
         }}
       >
