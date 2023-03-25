@@ -16,17 +16,18 @@ The topics implemented are:
 - useReducer
 - Redux
 - unit test and coverage with jest and react-testing-library
+- e2e test with Cypress
 
 in the package.json we can see the usefull commands:
 
 - npm run dev --> runs the app.
 - npm run test --> run all the tests.
 - npm run coverage --> create the coverage info and also we can use the ---> coverage/lcov-report/index.html as a nice way to see the coverage in the navigator.
+- npm run cypress --> for triggering the Cypress e2e interface, you can choose desired navigator
 
-for doing on the future:
+for doing on the future or not test i18next related behavior:
 - test RenderPhoto component.
 - test Speech component.
-- add Cypress for e2e test.
 
 ... some easter eggs around
 
