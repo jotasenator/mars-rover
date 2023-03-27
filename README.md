@@ -24,16 +24,16 @@ in the package.json we can see the usefull commands:
 - npm run test --> run all the tests.
 - npm run coverage --> create the coverage info and also we can use the ---> coverage/lcov-report/index.html as a nice way to see the coverage in the navigator.
 - npm run cypress --> for triggering the Cypress e2e interface, you can choose desired navigator
+- npm run cypress-chrome--> for triggering the Cypress e2e interface, with chrome explicitly.
 
 for doing on the future or not test i18next related behavior:
+
 - test RenderPhoto component.
 - test Speech component.
 
 ... some easter eggs around
 
 reach me at:
+
 - jotasenator@gmail.com
 - https://www.linkedin.com/in/maykel-contreras-camacho-7a1545110/
-
-
-
