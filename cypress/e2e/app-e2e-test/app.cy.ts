@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+import "cypress-real-events";
+
 import { speechTextDifferentLanguages } from "../../fixtures/speechHelper";
 
 
@@ -20,6 +22,8 @@ describe('example to-do app', () => {
     cy.get('#internet-speed')
       .should('have.css', 'rotate', '180deg');
     //need to handle a way to test when we mouse hover the internet speed image
+    cy.get('#internet-speed').realHover()
+
   });
 
   it('click refresh button and loading photos', () => {

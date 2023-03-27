@@ -9,9 +9,10 @@
     "preview": "vite preview",
     "test": "NODE_ENV=test jest",
     "coverage": "npm test -- --coverage --collectCoverageFrom='src/**/*.{ts,tsx}'",
-    "cypress":"npx cypress open"
+    "cypress": "npx cypress open"
   },
   "dependencies": {
+    "cypress-real-events": "^1.7.6",
     "i18next": "^22.4.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
