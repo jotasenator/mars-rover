@@ -15,7 +15,6 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["cypress","cypress-real-events"]
   },
   "include": ["src", "src/config/jest"],
   "references": [{ "path": "./tsconfig.node.json" }]
